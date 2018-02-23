@@ -8,7 +8,7 @@ export default function HorseAndTree({history}) {
       <a-resources>
         <a-asset-item id="horseObj" src={horseObj}/>
       </a-resources>
-      <Entity class=".clickable" text-geometry="value: Home" events={{
+      <Entity class="clickable" text-geometry="value: Home" events={{
         click: () => {
           history.push("/")
         },
