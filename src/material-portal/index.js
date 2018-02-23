@@ -1,13 +1,11 @@
 /* global AFRAME */
-import loadStairs from '../cube-textures/stairs/load'
-import loadWater from '../cube-textures/water/load'
+import loadForest from '../cube-textures/forest/load'
 import loadSky from '../cube-textures/stormydays/load'
 import createMaterial from './createSkyBoxMaterial'
 import createCache from '../cache'
 
 const cubeTextures = {
-  forest: loadStairs(),
-  ocean: loadWater(),
+  forest: loadForest(),
   sky: loadSky(),
 }
 
