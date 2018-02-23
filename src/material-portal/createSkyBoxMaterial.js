@@ -1,7 +1,6 @@
 /* global THREE */
 
 const shader = THREE.ShaderLib.cube
-//const {fragmentShader, vertexShader} = shader
 
 const vertexShader = `
   varying vec3 viewDirection;
