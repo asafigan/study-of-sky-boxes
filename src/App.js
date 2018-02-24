@@ -8,6 +8,7 @@ import 'aframe-text-geometry-component'
 import HorseAndTree from './pages/HorseAndTree'
 import Home from './pages/Home'
 import Hall from './pages/Hall'
+import Doorways from './pages/DoorWays'
 
 export default class App extends Component {
 
@@ -19,6 +20,7 @@ export default class App extends Component {
             <Route exact path="/" component={Home}/>
             <Route exact path="/horse-tree" component={HorseAndTree}/>
             <Route exact path="/hall" component={Hall}/>
+            <Route exact path="/doorways" component={Doorways}/>
           </Entity>
         </Router>
       </Scene>
