@@ -1,12 +1,16 @@
 /* global AFRAME */
 import loadForest from '../cube-textures/forest/load'
-import loadSky from '../cube-textures/stormydays/load'
+import loadStormySky from '../cube-textures/stormydays/load'
+import loadBrightSky from '../cube-textures/TropicalSunnyDay/load'
+import loadDarkSky from '../cube-textures/ThickCloudsWater/load'
 import createMaterial from './createSkyBoxMaterial'
 import createCache from '../cache'
 
 const cubeTextures = {
   forest: loadForest(),
-  sky: loadSky(),
+  stormySky: loadStormySky(),
+  brightSky: loadBrightSky(),
+  darkSky: loadDarkSky(),
 }
 
 const materialCache = createCache(createMaterial)

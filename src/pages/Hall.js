@@ -16,7 +16,7 @@ export default function HallScene({history}) {
   const materials = {
     interiorMaterial: {
       "material-portal": {
-        scene: "sky",
+        scene: "brightSky",
       },
     },
     exteriorMaterial: {},
@@ -25,7 +25,7 @@ export default function HallScene({history}) {
   return (
     <Entity rotation="0 0 0">
       <Entity primitive="a-circle" color="#bbb" radius="infinite" rotation="-90 0 0"/>
-      <Entity primitive="a-sky" material-horizon-skybox="horizonColor: lightcyan; topColor: lightskyblue; bottomColor: whitesmoke; topTransitionFactor: 1;"/>
+      <Entity primitive="a-sky" material-portal="scene: darkSky"/>
       <Hall position={`0 ${height} ${-(5 + length/2)}`} {...dimensions} {...materials}/>
       <Entity primitive="a-camera">
         <Entity primitive="a-cursor" raycaster="objects: .clickable"/>

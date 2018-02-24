@@ -10,7 +10,7 @@ export default function Home({history}) {
       <Entity text-geometry="value: Horse with Tree" events={{
         click: goTo("/horse-tree"),
         }} material-portal="scene: forest" position="-4 0 -5" scale="2 2 2"/>
-      <Entity primitive="a-sky" material-portal="scene: sky"/>
+      <Entity primitive="a-sky" material-portal="scene: stormySky"/>
       <Entity primitive="a-camera">
         <Entity primitive="a-cursor"/>
       </Entity>
