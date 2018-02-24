@@ -22,7 +22,7 @@ export default function HorseAndTree({history}) {
         </Entity>
       </Entity>
 
-      <Entity primitive="a-sky" color="blue"/>
+      <Entity primitive="a-sky" material-horizon-skybox="horizonColor: lightcyan; topColor: lightskyblue; bottomColor: whitesmoke; topTransitionFactor: 1;"/>
       <Entity primitive="a-camera">
         <Entity primitive="a-cursor" raycaster="objects: .clickable"/>
       </Entity>
