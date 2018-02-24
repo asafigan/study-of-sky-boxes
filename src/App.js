@@ -7,6 +7,7 @@ import './material-horizon-skybox'
 import 'aframe-text-geometry-component'
 import HorseAndTree from './pages/HorseAndTree'
 import Home from './pages/Home'
+import Hall from './pages/Hall'
 
 export default class App extends Component {
 
@@ -16,7 +17,8 @@ export default class App extends Component {
         <Router>
           <Entity>
             <Route exact path="/" component={Home}/>
-            <Route path="/horse-tree" component={HorseAndTree}/>
+            <Route exact path="/horse-tree" component={HorseAndTree}/>
+            <Route exact path="/hall" component={Hall}/>
           </Entity>
         </Router>
       </Scene>
