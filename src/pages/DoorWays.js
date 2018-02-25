@@ -17,12 +17,12 @@ export default function DoorwayScene({history}) {
   const materials = {
     interiorMaterial: {
       "material-portal": {
-        scene: "brightSky",
+        scene: "darkSky",
       },
     },
     exteriorMaterial: {
       "material-portal": {
-        scene: "darkSky",
+        scene: "brightSky",
       },
     },
   }

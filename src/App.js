@@ -18,7 +18,7 @@ export default class App extends Component {
         <Router>
           <Entity>
             <Route exact path="/" component={Home}/>
-            <Route exact path="/horse-tree" component={HorseAndTree}/>
+            <Route exact path="/horse" component={HorseAndTree}/>
             <Route exact path="/hall" component={Hall}/>
             <Route exact path="/doorways" component={Doorways}/>
           </Entity>
