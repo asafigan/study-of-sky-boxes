@@ -1,7 +1,7 @@
 import React from 'react'
 import {Entity} from 'aframe-react'
-import horseObj from '../models/horse.obj'
-import treeObj from '../models/tree.obj'
+import horseObj from '../models/horse/horse.obj'
+import treeObj from '../models/tree/tree.obj'
 import Camera from '../components/Camera'
 
 export default function HorseAndTree({history}) {
