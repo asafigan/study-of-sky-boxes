@@ -3,7 +3,7 @@ import {Entity} from 'aframe-react'
 import {Hall, Ceiling} from '../components/Hall'
 import Camera from '../components/Camera'
 
-export default function DoorwayScene({history}) {
+export default function Doorways({history}) {
   const height = 1.5
   const width = 1.2
   const length = 5

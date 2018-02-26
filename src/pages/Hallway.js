@@ -2,7 +2,7 @@ import React from 'react'
 import {Entity} from 'aframe-react'
 import {Hall} from '../components/Hall'
 
-export default function HallScene({history}) {
+export default function HallWay({history}) {
   const height = 1.5
   const width = 1.2
   const length = 5
