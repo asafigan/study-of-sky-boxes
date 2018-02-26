@@ -3,6 +3,7 @@ import {Entity} from 'aframe-react'
 import hallPreview from '../images/preview-hall.png'
 import doorwaysPreview from '../images/preview-doorways.png'
 import horsePreview from '../images/preview-horse.png'
+import Camera from '../components/Camera'
 
 export default function Home({history}) {
   const goTo = (path) => () => history.push(path)
@@ -22,6 +23,7 @@ export default function Home({history}) {
       <Entity rotation="0 -45 0">
         <Link handleClick={goTo("/horse")} src="#horsePreview"/>
       </Entity>
+      <Camera/>
     </Entity>
   )
 }

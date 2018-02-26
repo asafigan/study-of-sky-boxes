@@ -11,7 +11,6 @@ import Hall from './pages/Hall'
 import Doorways from './pages/DoorWays'
 
 export default class App extends Component {
-
   render() {
     return (
       <Scene>
@@ -23,18 +22,6 @@ export default class App extends Component {
             <Route exact path="/doorways" component={Doorways}/>
           </Entity>
         </Router>
-        <Entity primitive="a-camera">
-          <Entity primitive="a-cursor"
-            events={{
-              mouseenter: function() {
-                this.setAttribute('material', 'color', 'springgreen')
-              },
-              mouseleave: function() {
-                this.setAttribute('material', 'color', 'black')
-              },
-            }}
-            raycaster="objects: .clickable"/>
-        </Entity>
       </Scene>
     )
   }

@@ -2,6 +2,7 @@ import React from 'react'
 import {Entity} from 'aframe-react'
 import horseObj from '../models/horse.obj'
 import treeObj from '../models/tree.obj'
+import Camera from '../components/Camera'
 
 export default function HorseAndTree({history}) {
   return (
@@ -23,6 +24,7 @@ export default function HorseAndTree({history}) {
       </Entity>
 
       <Entity primitive="a-sky" material-horizon-skybox="horizonColor: lightcyan; topColor: lightskyblue; bottomColor: whitesmoke; topTransitionFactor: 1;"/>
+      <Camera/>
     </Entity>
   )
 }
