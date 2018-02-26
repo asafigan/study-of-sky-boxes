@@ -14,27 +14,40 @@ export default function Home({history}) {
         <Entity primative="a-asset-item" id="horsePreview" src={horsePreview}/>
       </Entity>
       <Entity primitive="a-sky" material-portal="scene: stormySky"/>
-      <Entity position="0 2 -10" events={{
-        click: goTo("/hall"),
-        }}
-        scale="0.001 0.001 0.001" width="4096" height="2048" primitive="a-image" src="#hallPreview"/>
+      <Link handleClick={goTo("/hall")} src="#hallPreview"/>
       <Entity rotation="0 45 0">
-        <Entity position="0 2 -10" events={{
-          click: goTo("/doorways"),
-          }}
-          scale="0.001 0.001 0.001" width="4096" height="2048" primitive="a-image" src="#doorwaysPreview"/>
+        <Link handleClick={goTo("/doorways")} src="#doorwaysPreview"/>
       </Entity>
 
       <Entity rotation="0 -45 0">
-        <Entity position="0 2 -10" events={{
-          click: goTo("/horse"),
-          }}
-          scale="0.001 0.001 0.001" width="4096" height="2048" primitive="a-image" src="#horsePreview"/>
+        <Link handleClick={goTo("/horse")} src="#horsePreview"/>
       </Entity>
+    </Entity>
+  )
+}
 
-      <Entity primitive="a-camera">
-        <Entity primitive="a-cursor"/>
-      </Entity>
+function Link({handleClick, src}) {
+  return (
+    <Entity
+      class="clickable"
+      position="0 2 -10"
+      events={{
+        mouseenter() {
+          this.setAttribute('scale', '1.2 1.2 1')
+        },
+        mouseleave() {
+          this.setAttribute('scale', '1 1 1')
+        }
+      }}>
+        <Entity
+          events={{
+            click: handleClick,
+          }}
+          scale="0.001 0.001 0.001"
+          width="4096" 
+          height="2048"
+          primitive="a-image"
+          src={src}/>
     </Entity>
   )
 }

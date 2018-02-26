@@ -27,9 +27,6 @@ export default function HallScene({history}) {
     <Entity rotation="0 0 0">
       <Entity primitive="a-sky" material-portal="scene: darkSky"/>
       <Hall position={`0 ${height} ${-(5 + length/2)}`} {...dimensions} {...materials}/>
-      <Entity primitive="a-camera">
-        <Entity primitive="a-cursor" raycaster="objects: .clickable"/>
-      </Entity>
     </Entity>
   )
 }

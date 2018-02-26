@@ -32,9 +32,6 @@ export default function DoorwayScene({history}) {
       <Entity primitive="a-sky" {...materials.exteriorMaterial}/>
       <Hall position={`0 ${height} ${-(5 + length/2)}`} {...dimensions} {...materials}/>
       <Ceiling position={`0 ${height} ${-(5 + length/2)}`} rotation="0 0 180" {...dimensions} {...materials}/>
-      <Entity primitive="a-camera">
-        <Entity primitive="a-cursor" raycaster="objects: .clickable"/>
-      </Entity>
     </Entity>
   )
 }

@@ -15,12 +15,12 @@ export function Hall({length, height, width, thickness, position="0 0 0", rotati
   }
   return (
     <Entity position={`0 ${height} ${-(5 + length/2)}`}>
-        <Wall {...dimensions} {...materials}/>
-        <Wall rotation="0 180 0" {...dimensions} {...materials}/>
-        <Ceiling {...dimensions} {...materials}/>
-        <Frame position={`0 0 ${-length/2}`} rotation="0 180 0" {...dimensions} {...materials}/>
-        <Frame position={`0 0 ${length/2}`} {...dimensions} {...materials}/>
-      </Entity>
+      <Wall {...dimensions} {...materials}/>
+      <Wall rotation="0 180 0" {...dimensions} {...materials}/>
+      <Ceiling {...dimensions} {...materials}/>
+      <Frame position={`0 0 ${-length/2}`} rotation="0 180 0" {...dimensions} {...materials}/>
+      <Frame position={`0 0 ${length/2}`} {...dimensions} {...materials}/>
+    </Entity>
   )
 }
 
