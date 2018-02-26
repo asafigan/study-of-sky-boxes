@@ -14,7 +14,7 @@ export default function Home({history}) {
         <Entity primative="a-asset-item" id="doorwaysPreview" src={doorwaysPreview}/>
         <Entity primative="a-asset-item" id="horsePreview" src={horsePreview}/>
       </Entity>
-      <Entity primitive="a-sky" material-portal="scene: stormySky"/>
+      <Entity primitive="a-sky" material-skybox="scene: stormySky"/>
       <Link handleClick={goTo("/hallway")} src="#hallPreview"/>
       <Entity rotation="0 45 0">
         <Link handleClick={goTo("/doorways")} src="#doorwaysPreview"/>

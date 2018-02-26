@@ -1,6 +1,7 @@
 import React from 'react'
 import {Entity} from 'aframe-react'
 import {Hall} from '../components/Hall'
+import Camera from '../components/Camera'
 
 export default function HallWay({history}) {
   const height = 1.5
@@ -16,7 +17,7 @@ export default function HallWay({history}) {
 
   const materials = {
     interiorMaterial: {
-      "material-portal": {
+      "material-skybox": {
         scene: "brightSky",
       },
     },
@@ -25,8 +26,9 @@ export default function HallWay({history}) {
 
   return (
     <Entity rotation="0 0 0">
-      <Entity primitive="a-sky" material-portal="scene: darkSky"/>
+      <Entity primitive="a-sky" material-skybox="scene: darkSky"/>
       <Hall position={`0 ${height} ${-(5 + length/2)}`} {...dimensions} {...materials}/>
+      <Camera/>
     </Entity>
   )
 }

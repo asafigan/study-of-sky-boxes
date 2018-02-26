@@ -37,10 +37,10 @@ export default class NotFound extends Component {
     const {time, redirect} = this.state
     return (
       <Entity>
-        <Entity primitive="a-sky" material-portal="scene: brightSky"/>
-        <Entity text-geometry="value: 404" material-portal="scene: stormySky" position="-10 0 -20" scale="20 20 20"/>
-        <Entity text-geometry={`value: Redirecting to Gallery`} material-portal="scene: darkSky" position="-6 1.5 -10" scale="2 2 2"/>
-        <Entity text-geometry={`value: in ${time} seconds`} material-portal="scene: darkSky" position="-3 0 -10" scale="2 2 2"/>
+        <Entity primitive="a-sky" material-skybox="scene: brightSky"/>
+        <Entity text-geometry="value: 404" material-skybox="scene: stormySky" position="-10 0 -20" scale="20 20 20"/>
+        <Entity text-geometry={`value: Redirecting to Gallery`} material-skybox="scene: darkSky" position="-6 1.5 -10" scale="2 2 2"/>
+        <Entity text-geometry={`value: in ${time} seconds`} material-skybox="scene: darkSky" position="-3 0 -10" scale="2 2 2"/>
         <Camera/>
         {redirect && <Redirect to="/"/>}
       </Entity>

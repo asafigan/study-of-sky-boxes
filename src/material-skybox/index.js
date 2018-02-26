@@ -15,7 +15,7 @@ const cubeTextures = {
 
 const materialCache = createCache(createMaterial)
 
-AFRAME.registerComponent('material-portal', {
+AFRAME.registerComponent('material-skybox', {
   schema: {scene: {type: 'string'}},
   init() {
     const {scene} = this.data
