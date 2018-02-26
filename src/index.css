@@ -6,7 +6,11 @@ body {
 
 .hovering-text {
   position: absolute;
+  z-index: 1;
   top: 20px;
   right: 20px;
-  color: black;
+  background: white;
+  border: 1px solid grey;
+  padding: 5px;
+  border-radius: 2px;
 }
